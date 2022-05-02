@@ -52,8 +52,8 @@ td, th {
   --bp-desktop: 1440px;
   --clr-p-1: hsl(0, 78%, 62%);
   --clr-p-2: hsl(180, 62%, 55%);
-  --clr-p-2: hsl(34, 97%, 64%);
-  --clr-p-2: hsl(212, 86%, 64%);
+  --clr-p-3: hsl(34, 97%, 64%);
+  --clr-p-4: hsl(212, 86%, 64%);
   --clr-s-1: hsl(234, 12%, 34%);
   --clr-s-2: hsl(229, 6%, 66%);
   --clr-s-3: hsl(0, 0%, 98%);
@@ -70,6 +70,7 @@ body {
   height: 100vh;
   display: grid;
   place-items: end center;
+  background-color: var(--clr-s-3);
 }
 
 header {
@@ -92,13 +93,15 @@ header p {
 }
 
 main {
-  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 :root {
@@ -106,8 +109,8 @@ main {
   --bp-desktop: 1440px;
   --clr-p-1: hsl(0, 78%, 62%);
   --clr-p-2: hsl(180, 62%, 55%);
-  --clr-p-2: hsl(34, 97%, 64%);
-  --clr-p-2: hsl(212, 86%, 64%);
+  --clr-p-3: hsl(34, 97%, 64%);
+  --clr-p-4: hsl(212, 86%, 64%);
   --clr-s-1: hsl(234, 12%, 34%);
   --clr-s-2: hsl(229, 6%, 66%);
   --clr-s-3: hsl(0, 0%, 98%);
@@ -116,25 +119,62 @@ main {
 }
 
 .card {
-  width: 350px;
-  padding: 1rem;
-  margin: 0 1rem;
-  background-color: var(--clr-s-2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 400px;
+  padding: 30px;
+  margin: 30px 20px;
+  border-radius: 5px;
+  border-top: 4px solid var(--clr-p-1);
+  background-color: white;
+  height: auto;
+  -webkit-box-shadow: rgba(76, 78, 97, 0.1) 0px 13px 27px -5px, rgba(76, 78, 97, 0.15) 0px 8px 16px -8px;
+          box-shadow: rgba(76, 78, 97, 0.1) 0px 13px 27px -5px, rgba(76, 78, 97, 0.15) 0px 8px 16px -8px;
 }
 .card h3 {
+  color: var(--clr-s-1);
   font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 .card p {
+  color: var(--clr-s-2);
   font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-bottom: 50px;
+}
+.card img {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.one {
+  border-top: 4px solid var(--clr-p-2);
+}
+
+.three {
+  border-top: 4px solid var(--clr-p-3);
+}
+
+.four {
+  border-top: 4px solid var(--clr-p-4);
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 1.5rem;
   text-align: center;
   padding: 10px;
 }
 .attribution a {
-  color: hsl(228deg, 45%, 44%);
+  color: hsl(0deg, 78%, 62%);
+}
+.attribution a:hover {
+  color: hsl(212deg, 86%, 64%);
 }
 
 :root {
@@ -142,8 +182,8 @@ main {
   --bp-desktop: 1440px;
   --clr-p-1: hsl(0, 78%, 62%);
   --clr-p-2: hsl(180, 62%, 55%);
-  --clr-p-2: hsl(34, 97%, 64%);
-  --clr-p-2: hsl(212, 86%, 64%);
+  --clr-p-3: hsl(34, 97%, 64%);
+  --clr-p-4: hsl(212, 86%, 64%);
   --clr-s-1: hsl(234, 12%, 34%);
   --clr-s-2: hsl(229, 6%, 66%);
   --clr-s-3: hsl(0, 0%, 98%);
